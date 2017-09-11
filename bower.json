@@ -1,0 +1,47 @@
+{
+  "name": "address-book",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Eugen Ivanou <eugenivanou@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "angular": "1.6.1",
+    "angular-resource": "1.6.1",
+    "angular-bootstrap": "2.5.0",
+    "angular-ui-router": "0.3.2",
+    "angular-cookies": "1.5.5",
+    "angular-sanitize": "1.6.1",
+    "ng-file-upload-shim": "^12.0.4",
+    "angular-animate": "1.6.1",
+    "angular-translate": "^2.11.0",
+    "angular-translate-loader-url": "^2.11.0",
+    "angular-translate-loader-static-files": "^2.11.0",
+    "angular-moment-picker": "moment-picker#^0.5.6",
+    "moment": "^2.14.1",
+    "angular-recaptcha": "^3.0.3",
+    "underscore": "^1.8.3",
+    "angular-modal-service": "^0.10.1",
+    "angular-translate-recaptcha-dynamic": "^0.0.3",
+    "angularjs-datepicker": "^2.1.15",
+    "satellizer": "^0.15.5",
+    "angular-toastr": "^2.1.1",
+    "angular-local-storage": "^0.5.0",
+    "angular-loading": "^0.1.4",
+    "angular-scroll-glue": "^2.0.7",
+    "angular-mocks": "1.6.1",
+    "components-font-awesome": "^4.7.0",
+    "angular-slick-carousel": "^3.1.7",
+    "angular-froala": "^2.5.0",
+    "angular-socialshare": "angularjs-socialshare#^2.3.7"
+  },
+  "devDependencies": {},
+  "resolutions": {
+    "angular": "1.6.1",
+    "froala-wysiwyg-editor": "2.4.0"
+  }
+}
