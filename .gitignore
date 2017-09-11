@@ -1,0 +1,12 @@
+node_modules
+bower_components
+server/node_modules
+coverage
+sftp-config.json
+_build
+npm-debug.log
+.idea
+.project
+.settings
+config.json
+dist
