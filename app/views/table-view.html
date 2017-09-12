@@ -1,0 +1,43 @@
+<div class="items-by-page">
+    <label for="items">Items: </label>
+    <input class="input-sm form-control" name="items" id="items" type="number" ng-model="itemsByPage"/>
+</div>
+<table st-table="contacts" class="table table-striped">
+    <thead>
+    <tr>
+        <th>Customer ID</th>
+        <th>Company Name</th>
+        <th>Contact Name</th>
+        <th>Contact Title</th>
+        <th>Address</th>
+        <th>City</th>
+        <th>Email</th>
+        <th>PostalCode</th>
+        <th>Country</th>
+        <th>Phone</th>
+        <th>Fax</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="contact in contacts">
+        <td>{{convert(contact.CustomerID)}}</td>
+        <td>{{convert(contact.CompanyName)}}</td>
+        <td>{{convert(contact.CompanyName)}}</td>
+        <td>{{convert(contact.ContactTitle)}}</td>
+        <td>{{convert(contact.Address)}}</td>
+        <td>{{convert(contact.City)}}</td>
+        <td>{{convert(contact.Email)}}</td>
+        <td>{{convert(contact.PostalCode)}}</td>
+        <td>{{convert(contact.Country)}}</td>
+        <td>{{convert(contact.Phone)}}</td>
+        <td>{{convert(contact.Fax)}}</td>
+    </tr>
+    </tbody>
+    <tfoot>
+    <tr>
+        <td colspan="15" class="text-center">
+            <div st-pagination="" st-items-by-page="itemsByPage" st-displayed-pages="7"></div>
+        </td>
+    </tr>
+    </tfoot>
+</table>

@@ -1,7 +1,11 @@
-angular.module('addressBook').controller('ContactsController', function ($scope, $state, ContactsService) {
-    ContactsService.loadContacts().then(function (data) {
-        $scope.contacts = data;
-    });
+angular.module('addressBook').controller('ContactsController', function ($scope, ContactsService, contacts) {
+    $scope.isTableView = true;
+    $scope.itemsByPage = 10;
+    $scope.contacts = contacts;
 
-
+    $scope.convert = function (array) {
+        if (array instanceof Array) {
+            return array.join();
+        }
+    }
 });

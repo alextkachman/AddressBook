@@ -37,7 +37,8 @@
     "components-font-awesome": "^4.7.0",
     "angular-slick-carousel": "^3.1.7",
     "angular-froala": "^2.5.0",
-    "angular-socialshare": "angularjs-socialshare#^2.3.7"
+    "angular-socialshare": "angularjs-socialshare#^2.3.7",
+    "angular-smart-table": "^2.1.8"
   },
   "devDependencies": {},
   "resolutions": {

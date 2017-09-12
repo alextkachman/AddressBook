@@ -1,2 +1,6 @@
-<div>
+<div class="address-book-header">
+    <a class="table-icon active" ng-class="{active: isTableView == true}" ng-click="isTableView = true"></a>
+    <a class="grid-icon" ng-class="{active: isTableView == false}" ng-click="isTableView = false"></a>
 </div>
+<div ng-if="isTableView" ng-include="'./views/table-view.html'"></div>
+<div ng-if="!isTableView" ng-include="'./views/card-view.html'"></div>
