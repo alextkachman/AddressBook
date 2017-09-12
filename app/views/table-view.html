@@ -1,9 +1,12 @@
-<div class="items-by-page">
+<div class="table-view-items">
     <label for="items">Items: </label>
     <input class="input-sm form-control" name="items" id="items" type="number" ng-model="itemsByPage"/>
 </div>
 <table st-table="contacts" class="table table-striped">
     <thead>
+    <tr>
+        <th colspan="15"><input st-search="" class="form-control" placeholder="global search ..." type="text"></th>
+    </tr>
     <tr>
         <th>Customer ID</th>
         <th>Company Name</th>
