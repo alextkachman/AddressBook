@@ -9,3 +9,28 @@ The application should present the available contacts in two different views (as
 
 The result should be delivered as a zip file sent by email or as GitHub repository
 
+## Download
+```bash
+git clone https://github.com/EugenIvanou/AddressBook.git
+```
+## 1. Setup front-end env
+```bash
+npm install
+```
+- install all npm and bower dependencies
+## 2. Setup nodejs server env
+```bash
+cd server
+npm install
+```
+- install all npm dependencies for expressJS server
+
+## 3. Build dev version
+```bash
+cd ..
+gulp build
+gulp server
+```
+- return back
+- build 'dist' folder 
+- run server
