@@ -1,12 +1,61 @@
+<div class="card-view-input">
+    <input class="form-control" placeholder="search ..." type="text" ng-model="searchString">
+</div>
 <div class="card-view">
-    <div ng-repeat="contact in contacts.slice(((currentPage-1)*itemsPerPage), ((currentPage)*itemsPerPage))" class="row">
-        <div class="col-xs-4">{{contact.CustomerID}}</div>
-        <!--<div class="col-xs-4">{{aContacts[$index].CustomerID}}</div>-->
-        <!--<div class="col-xs-4" ng-if="aContacts.length > ($index + 1)">{{aContacts[$index + 1].CustomerID}}</div>-->
-        <!--<div class="col-xs-4" ng-if="aContacts.length > ($index + 2)">{{aContacts[$index + 2].CustomerID}}</div>-->
+    <div ng-repeat="contact in contacts.slice(((currentPage-1)*itemsPerPage), ((currentPage)*itemsPerPage)) | filter:searchString"
+         ng-init="con=contacts.slice(((currentPage-1)*itemsPerPage), ((currentPage)*itemsPerPage))[$index]"
+         class="card-cell">
+        <div class="card">
+            <div class="card-row">
+                <div class="card-fields">
+                    <label>Customer ID : </label>
+                    <span>{{convert(con.CustomerID)}}</span>
+                </div>
+                <div class="card-fields">
+                    <label>Company Name : </label>
+                    <span>{{convert(con.CompanyName)}}</span>
+                </div>
+                <div class="card-fields">
+                    <label>Contact Name : </label>
+                    <span>{{convert(con.ContactName)}}</span>
+                </div>
+                <div class="card-fields">
+                    <label>Contact Title : </label>
+                    <span>{{convert(con.ContactTitle)}}</span>
+                </div>
+                <div class="card-fields">
+                    <label>Address : </label>
+                    <span>{{convert(con.Address)}}</span>
+                </div>
+                <div class="card-fields">
+                    <label>City : </label>
+                    <span>{{convert(con.City)}}</span>
+                </div>
+                <div class="card-fields">
+                    <label>Email : </label>
+                    <span>{{convert(con.Email)}}</span>
+                </div>
+                <div class="card-fields">
+                    <label>PostalCode : </label>
+                    <span>{{convert(con.PostalCode)}}</span>
+                </div>
+                <div class="card-fields">
+                    <label>Country : </label>
+                    <span>{{convert(con.Country)}}</span>
+                </div>
+                <div class="card-fields">
+                    <label>Phone : </label>
+                    <span>{{convert(con.Phone)}}</span>
+                </div>
+                <div class="card-fields">
+                    <label>Fax : </label>
+                    <span>{{convert(con.Fax)}}</span>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="footer">
-        <ul uib-pagination total-items="contacts.length" ng-model="currentPage" direction-links="false"
-            items-per-page="itemsPerPage" max-size="maxSize"></ul>
-    </div>
+</div>
+<div class="abook-pagination">
+    <ul uib-pagination total-items="contacts.length" ng-model="currentPage" direction-links="false"
+        items-per-page="itemsPerPage" max-size="maxSize"></ul>
 </div>

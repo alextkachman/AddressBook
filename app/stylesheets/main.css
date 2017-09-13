@@ -1,4 +1,6 @@
 .content {
+    height: auto;
+    width: 100%;
     padding: 15px;
 }
 
@@ -9,4 +11,9 @@
 .abook-items-per-page input {
     display: inline-block;
     width: 50px;
+}
+
+.abook-pagination {
+    display: block;
+    text-align: center;
 }

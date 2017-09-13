@@ -1,8 +1,63 @@
 .card-view {
-    padding: 15px;
+    height: auto;
+    text-align: center;
+}
+
+.card-cell {
+    display: inline-block;
+    width: 33.33%;
+}
+
+@media (min-width: 600px) and (max-width: 1200px) {
+    .card-cell {
+        width: 50%;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 600px) {
+    .card-cell {
+        width: 100%;
+    }
+}
+
+.card-view-input {
+    padding: 8px 10px 8px 8px;
+    font-weight: 700;
 }
 
 .card {
-    width: 100px;
-    height: 150px;
+    width: 100%;
+    height: 295px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 15px;
+    min-width: 300px;
+    max-width: 354px;
+    margin: 15px;
+    border-radius: 2px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+    background-color: #f9f9f9;
+}
+
+.card-row {
+    position: relative;
+}
+
+.card-fields {
+    text-align: left;
+}
+
+.card-fields label {
+    font-size: 12px;
+    text-align: left;
+    color: #181818;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.card-fields span {
+    font-size: 14px;
+    text-align: right;
+    color: rgba(0, 0, 0, 0.65);
 }

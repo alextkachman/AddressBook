@@ -1,7 +1,7 @@
 <table st-table="contacts" class="table table-striped">
     <thead>
     <tr>
-        <th colspan="15"><input st-search="" class="form-control" placeholder="global search ..." type="text"></th>
+        <th colspan="15"><input st-search="" class="form-control" placeholder="search ..." type="text"></th>
     </tr>
     <tr>
         <th>Customer ID</th>
@@ -21,7 +21,7 @@
     <tr ng-repeat="contact in contacts">
         <td>{{convert(contact.CustomerID)}}</td>
         <td>{{convert(contact.CompanyName)}}</td>
-        <td>{{convert(contact.CompanyName)}}</td>
+        <td>{{convert(contact.ContactName)}}</td>
         <td>{{convert(contact.ContactTitle)}}</td>
         <td>{{convert(contact.Address)}}</td>
         <td>{{convert(contact.City)}}</td>

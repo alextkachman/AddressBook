@@ -2,7 +2,7 @@
 var addressBook = angular.module('addressBook', ['ui.router', 'ngResource', 'ngAnimate', 'ngSanitize', 'ui.bootstrap', 'smart-table']);
 
 addressBook.config(['$urlRouterProvider', '$stateProvider', '$httpProvider',
-    function ($urlRouterProvider, $stateProvider, $httpProvider) {
+    function ($urlRouterProvider, $stateProvider) {
         $stateProvider
             .state({
                 name: 'contacts', url: '/', templateUrl: './views/contacts.html', controller: 'ContactsController',
@@ -13,9 +13,4 @@ addressBook.config(['$urlRouterProvider', '$stateProvider', '$httpProvider',
                 }
             });
         $urlRouterProvider.otherwise('/');
-    }])
-    .run(function ($rootScope, $state, $window) {
-        $rootScope.$on('$stateChangeStart', function (event, toState, toParams, fromState) {
-
-        });
-    });
+    }]);

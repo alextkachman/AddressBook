@@ -4,6 +4,7 @@ angular.module('addressBook').controller('ContactsController', function ($scope,
     $scope.itemsPerPage = 10;
     $scope.currentPage = 1;
     $scope.maxSize = 7;
+    $scope.searchString = '';
 
     $scope.convert = function (array) {
         if (array instanceof Array) {
