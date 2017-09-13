@@ -8,6 +8,10 @@
     </div>
 </div>
 <div class="content">
+    <div class="abook-items-per-page">
+        <label for="items">Items: </label>
+        <input class="input-sm form-control" name="items" id="items" type="number" ng-model="itemsPerPage"/>
+    </div>
     <div ng-if="isTableView" ng-include="'./views/table-view.html'"></div>
     <div ng-if="!isTableView" ng-include="'./views/card-view.html'"></div>
 </div>

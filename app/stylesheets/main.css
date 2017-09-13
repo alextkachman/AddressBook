@@ -2,12 +2,11 @@
     padding: 15px;
 }
 
-.table-view-items {
-    margin: 10px 10px 10px 0;
-    float: right;
+.abook-items-per-page {
+    margin-left: calc(100% - 105px);
 }
 
-.table-view-items input {
+.abook-items-per-page input {
     display: inline-block;
     width: 50px;
 }

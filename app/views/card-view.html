@@ -1,1 +1,12 @@
-<span>now card view mode</span>
+<div class="card-view">
+    <div ng-repeat="contact in contacts.slice(((currentPage-1)*itemsPerPage), ((currentPage)*itemsPerPage))" class="row">
+        <div class="col-xs-4">{{contact.CustomerID}}</div>
+        <!--<div class="col-xs-4">{{aContacts[$index].CustomerID}}</div>-->
+        <!--<div class="col-xs-4" ng-if="aContacts.length > ($index + 1)">{{aContacts[$index + 1].CustomerID}}</div>-->
+        <!--<div class="col-xs-4" ng-if="aContacts.length > ($index + 2)">{{aContacts[$index + 2].CustomerID}}</div>-->
+    </div>
+    <div class="footer">
+        <ul uib-pagination total-items="contacts.length" ng-model="currentPage" direction-links="false"
+            items-per-page="itemsPerPage" max-size="maxSize"></ul>
+    </div>
+</div>

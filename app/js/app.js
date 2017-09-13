@@ -1,5 +1,5 @@
 'use strict';
-var addressBook = angular.module('addressBook', ['ui.router', 'ngResource', 'ui.bootstrap', 'smart-table']);
+var addressBook = angular.module('addressBook', ['ui.router', 'ngResource', 'ngAnimate', 'ngSanitize', 'ui.bootstrap', 'smart-table']);
 
 addressBook.config(['$urlRouterProvider', '$stateProvider', '$httpProvider',
     function ($urlRouterProvider, $stateProvider, $httpProvider) {
